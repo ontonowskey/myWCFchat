@@ -1,0 +1,16 @@
+﻿<Window x:Class="ChatClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatClient"
+        mc:Ignorable="d"
+        Title="ontonowskey's WCF chat" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <TextBox x:Name="tbUserName" Width="532" Height="41" HorizontalAlignment="Left" VerticalAlignment="Top" Text="/put username here/" TextWrapping="Wrap" Margin="250,15,0,0" />
+        <Button x:Name="btnConnDiscon" Click="Button_Click" Content="Connect" HorizontalAlignment="Left" Height="41" Margin="50,15,0,0" VerticalAlignment="Top" Width="180"/>
+        <ListBox x:Name="lbChat" HorizontalAlignment="Left" Height="211" Margin="10,61,0,0" VerticalAlignment="Top" Width="772"/>
+        <TextBox x:Name="tbMessage" IsEnabled="False" HorizontalAlignment="Left" Height="132" Margin="11,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="607" KeyDown="tbMessage_KeyDown"/>
+        <Button x:Name ="btnSndMsg" Click="btnSndMsg_Click" Content="Send Message" HorizontalAlignment="Left" Height="132" Margin="623,277,0,0" VerticalAlignment="Top" Width="159"/>
+    </Grid>
+</Window>
